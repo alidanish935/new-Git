@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           padding: 30px; 
+           text-align: center;
+        }
+        .head{
+            position: absolute;
+            top: 0px;
+            background-image: linear-gradient(#FF9933 23%,white 64%,green 3%);
+            font-size: 30px;
+            color: blue;
+            animation: revolve6 12s linear 0s infinite ;
+        }
+        @keyframes revolve6{
+            0%{left: 110%;}
+            to{left: -196%;}
+        }
+        .div{
+            position: absolute;
+            top: 80px;
+        }
+        p{
+            color:aqua;
+            align-items: center;
+            font-size: 30px;
+        }
+        .common:hover{
+            cursor: pointer;
+            background-color: aqua;
+        }
+        span{
+            position: absolute;
+            left: 25%;
+            right: 25%;
+            border: 10px solid palegreen;
+            border-image: linear-gradient(#FF9933 23%,white 64%,green 3%);
+            border-radius: 8px;
+            background-image: url("https://www.w3schools.com/css/img_forest.jpg");
+        }
+        #submitForm{
+            width: 20%;
+        }
+        .SS:hover{
+            background-color: blue;
+            border: 1px solid blue;
+            border-radius: 8px;
+           
+           
+        }
+    </style>
+</head>
+<script>
+    function nameInput(){
+        console.log("out of input");
+        document.getElementById("nameInput").style.border="1px solid red";
+    }
+    function focusInput(){
+        console.log("out of focus");
+    }
+    function userInput(){
+        console.log("Entering value");
+       // document.getElementById("nameInput")
+    } 
+    function LnameInput(){
+        document.getElementById("LnameInput").style.border="1px solid pink";
+    }
+    function changeInput(){
+        console.log("change input");
+        var flag=document.getElementById("state").value;
+        if(flag=="UP"){
+            var str="<option value='kanpur'>kanpur</option>";
+            str+="<option value='Lucknow'>Lucknow</option>";
+        }
+        if(flag=="MP"){
+            var str="<option value='Bhopal'>Bhopal</option>";
+            str+="<option value='Indore'>Indore</option>";
+        }
+        document.getElementById("city").innerHTML=str;
+    }
+    function submitForm(){
+        var nameInput=document.getElementById("nameInput");
+        var LabelName=document.getElementById("LabelName");
+        var LnameInput=document.getElementById("LnameInput");
+        var LabelLName=document.getElementById("LabelLName");
+        var pincode=document.getElementById("pincode");
+        var LabelPin=document.getElementById("LabelPin");
+        var number=document.getElementById("number");
+        var LabelNumber=document.getElementById("LabelNumber");
+        var email=document.getElementById("email");
+        var LableEmail=document.getElementById("LableEmail");
+        var state=document.getElementById("state");
+        var LableState=document.getElementById("LableState");
+        var city=document.getElementById("city");
+        var LableCity=document.getElementById("LableCity");
+        var description=document.getElementById("description");
+        var LableDescription=document.getElementById("LableDescription");
+
+        
+        if(nameInput.value==""){
+            LabelName.style.display="block";
+        }
+        else{
+            LabelName.style.display="none";
+        }
+        if(LnameInput.value==""){
+            LabelLName.style.display="block";
+        }
+        else{
+            LabelLName.style.display="none";
+        }
+        if(pincode.value=="" || pincode.value.length!=6){
+            LabelPin.style.display="block";
+        }
+        else{
+            LabelPin.style.display="none"
+        }
+        if(number.value=="" || number.value.length!=10){
+            LabelNumber.style.display="block";
+        }
+        else{
+            LabelNumber.style.display="none"
+        }
+        if(email.value=="" || email.value==" @ "){
+            LableEmail.style.display="block";
+        }
+        else{
+            LableEmail.style.display="none";  
+        }
+        if(pancard.value=="" || pancard.value=="/^([A-Z]){5}([0-9]){4}([A-Z]){1}$/"){
+            LablePancard.style.display="block";
+        }
+        else{
+            LablePancard.style.display="none";
+        }
+        if(state.value==""){
+            LableState.style.display="block";
+        }else{
+            LableState.style.display="none";
+        }
+        if(city.value==""){
+            LableCity.style.display="block";
+        }
+        else{
+            LableCity.style.display="none";
+        }
+        if(description.value==""){
+            LableDescription.style.display="block"
+        }
+        else{
+            LableDescription.style.display="none"
+        }
+    }
+</script>
+<body>
+    <pre class="head">   REGISTRATION FORM          REGISTRATION FORM          REGISTRATION FORM           REGISTRATION FORM         REGISTRATION FORM          REGISTRATION FORM </pre>
+    <span class="div">
+       
+    <p>First Name : <input type="text" value="" id="nameInput" class="common" placeholder="Enter your First Name" onblur="nameInput()" onfocus="focusInput()" oninput="userInput()"/></p>
+    <label id="LabelName" style= "color:red;display:none;">First name is required* </label>
+    <p>Last Name : <input type="text" value="" id="LnameInput" class="common" placeholder="Enter your Last Name" onblur="LnameInput()" /></p>
+    <label id="LabelLName" style="color: red; display:none">Last name is required*</label>
+    <p>PinCode : <input type="number"id="pincode" class="common" placeholder="Enter PinCode"/></p>
+    <label id="LabelPin" style="color: red; display:none">Enter valid pincode*</label>
+    <p>Phone No : <input type="number"id="number" class="common" placeholder="Enter your Phone no"/></p>
+    <label id="LabelNumber" style="color: red; display:none">Please enter a valid Number*</label>
+    <p>Email id : <input type="email"id="email" class="common" placeholder="Enter your Email"> </p>
+    <label id="LableEmail" style="color: red; display:none">Please enter a valid Email id*</label>
+    <p>Pan Card : <input type="text" id="pancard" class="common" placeholder="Enter your pan no"></p>
+    <label id="LablePancard" style="color: red;display:none">Please enter valid Pan no</label>
+
+    
+    <p>Select State : <select id="state" class="common" onchange="changeInput()">
+        <option value="">Select State</option>
+        <option value="UP">Jharkhand</option>
+        <option value="MP">MP</option>
+    </select></p>
+    <label id="LableState" style="color: red; display:none">Please Choose any State</label>
+    <p>Select City : <select id="city" class="common">
+       <option value="">City</option>
+    </select></p>
+    <lable id="LableCity" style="color: red; display:none">Please select your city</lable>
+    
+    <p>Description :<input type="text"id="description" class="common" placeholder="Add your discription"> </p>
+    <label id="LableDescription" style="color: red; display:none">Please add discription</label>
+    <p><submit id="submitForm" class="SS" onclick="submitForm()">submit</submit></p>
+    </span>
+</body>
+</html>
