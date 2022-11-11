@@ -1,0 +1,199 @@
+
+
+.div0{
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 500px;
+}
+#a1{
+    margin-left: 380px;
+}
+.anch{
+    font-size: 18px;
+    padding: 20px;
+}
+.div1{
+    width: 100%;
+    height: 50px;
+    padding-top: 50px;
+    /* border: 1px solid brown; */
+}
+#head{
+    font-size: 35px;
+    padding-left: 50px;
+    padding-right: 100px;
+    word-spacing: 50px;
+}
+a{
+    color: #000;
+}
+
+.div-i{
+    margin: 70px;
+    width: 90%;
+}
+#img1{
+    width: 100%;
+    
+}
+.in-img{
+    
+}
+.divb-img1{
+    position: absolute;
+    top: 400px;
+    left: 300px;
+    width: 300px;
+    line-height: 25px;
+
+}
+.divbb-img{
+    position: absolute;
+    left: 300px;
+    width:60% ;
+    line-height: 20px;
+}
+.inhead{
+    text-align: center;
+}
+.divnextimg{
+    position: absolute;
+    top: 1600px;
+    left: 100px;
+  
+    width: 85%;
+    height: 400px;
+    border: 1px gray;
+    background-color:lightgrey;
+}
+.line{
+    position: absolute;
+    top: 85px;
+    left: 65px;
+    width: 58px;
+    height: 1px;
+    background-color: #000;
+}
+.modern{
+    width: 500px;
+    height: 100px;
+    padding-top: 100px;
+    padding-left: 60px;
+    line-height: 25px;
+}
+.backimg{
+    float: right;
+    padding-right: 130px;
+}
+.backimg2{
+    position: absolute;
+    top: 2330px;
+    left: 100px;
+}
+#line2{
+    position: absolute;
+    top: 2535px;
+    right: 695px;
+    width: 58px;
+    height: 1px;
+   
+    background-color: #000;  
+}
+.met{
+    position: absolute;
+    top: 2555px;
+    right: 295px;
+    width: 458px;
+    height: 300px;
+
+}
+.mainvoor{
+    position: absolute;
+    top: 3055px;
+    left: 100px;
+    width: 90%;
+    height: 300px;
+    background-color: dimgray;
+   
+}
+#line3{
+    position: absolute;
+    top: 2735px;
+    width: 58px;
+    height: 1px;
+   
+    background-color: #000;  
+}
+.voor{
+    position: absolute;
+    top: 55px;
+    left: 55px;
+    width: 458px;
+    height: 300px;
+ 
+}
+.frontimg{
+    position: absolute;
+    top: 100px;
+    right: 50px;
+}
+.threediv{
+ position: absolute;
+ top: 3900px;
+ left: 100px;
+ width: 90%;
+ height: 600px;
+ background-color: dimgrey;
+}
+#wat{
+ font-size: 30px;
+ text-align: center;
+}
+.ik{
+    position: absolute;
+    top: 120px;
+    left: 70px;
+    width: 25%;
+    padding:  20px;
+    padding-bottom: 225px;
+    line-height: 25px;
+    word-spacing: 8px;
+    background-color: aliceblue;
+}
+.het{
+    position: absolute;
+    top: 120px;
+    left: 495px;
+    width: 25%;
+    padding:  20px; 
+    line-height: 25px; 
+    word-spacing: 8px;
+    background-color: aliceblue; 
+}
+.ikh{
+    position: absolute;
+    top: 120px;
+    right:70px;
+    width: 25%;
+    padding:  20px;
+    padding-bottom: 245px;
+    line-height: 25px;
+    word-spacing: 8px;
+    background-color: aliceblue;
+}
+.wideimg{
+    position: absolute;
+    top: 600px;
+    width: 100%;
+}
+.foot{
+    position: absolute;
+    top: 6400px;
+    width: 100%;
+    height: 500px;
+    background-color: blanchedalmond;
+}

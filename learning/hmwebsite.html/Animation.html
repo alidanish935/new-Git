@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            background-color: aquamarine;
+            height: 700PX;
+        }
+     
+        .upperdiv{
+            display: flex;
+            top: 20px;
+            justify-content: space-between;
+            margin: 10px;
+            height: 300px;
+        }
+          
+        .common{
+            position: relative;
+            top: 30px;
+            border: 1px solid black;
+            width: 49px;
+            /* height: 80px; */
+        }
+        .div1{
+            position: relative;
+            /* right: 50px; */
+            height: 200px;
+        }
+        .div2{
+            position: relative;
+            /* right: 50px; */
+            height: 600px;
+        }
+        .lower{
+            display: flex;
+            top: 320px;
+            justify-content: space-between;
+            margin: 10px;
+        }
+        .common2{
+            position: relative;
+            top: 30px;
+            border: 1px solid black;
+            width: 49px;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="upperdiv">
+        <div class="common div1" ></div>
+        <div class="common div2"></div>
+        <div class="common"></div>
+        <div class="common"></div>
+        <div class="common"></div>
+        <div class="common"></div>
+       </div>
+       
+       
+        <div class="lower">
+            <div class="common2" class="div7" ></div>
+            <div class="common2" class="div8"></div>
+            <div class="common2"></div>
+            <div class="common2" class="div10" ></div>
+            <div class="common2" class="div11"></div>
+        </div>
+        
+        
+        
+    </div>
+</body>
+</html>
